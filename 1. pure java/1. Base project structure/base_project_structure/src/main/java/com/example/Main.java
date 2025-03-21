@@ -20,7 +20,7 @@ public class Main {
         }
 
         System.out.println("Zastosowanie zmiennych środowiskowych i biblioteki dotenv");
-        Dotenv dotenv = Dotenv.configure().load();
+        Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
         String ENV_NAME = dotenv.get("ENV_NAME");
         System.out.println("ENV_NAME: " + ENV_NAME);
 

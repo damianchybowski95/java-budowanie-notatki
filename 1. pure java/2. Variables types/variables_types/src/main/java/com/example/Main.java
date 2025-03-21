@@ -127,7 +127,7 @@ public class Main {
         StringBuilder randSB = new StringBuilder("A random value");
         System.out.println("String builder: " + randSB);
         System.out.println("3rd index: " + randSB.charAt(3));
-        // Tak samo jak string buildera można używać string buffer, który działa jakoś z wątkami.
+        // Bodobnie jak StringBuilder'a można używać string buffer, który działa jakoś z wątkami.
         StringBuffer randBuff = new StringBuffer("A random value");
         System.out.println("String buffer: " + randBuff);
     }
